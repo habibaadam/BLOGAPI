@@ -2,10 +2,10 @@
 
 Objective: Build a Django API for a blog, providing endpoints for essential CRUD operations on both blogs and comments.
 Tasks:
-1. Set Up Django Project:
+1. Set Up Django Project: ✅
     - Create a new Django project named "BlogAPI."
     - Configure necessary project settings.
-2. Create Models:
+2. Create Models: ✅
     - Design Django models for:
         - Blog post (fields: title, content, author, timestamp).
         - Comment (fields: commenter name, content, timestamp).
