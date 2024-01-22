@@ -1,4 +1,4 @@
-##Task For Studying Django
+## Task For Studying Django
 
 Objective: Build a Django API for a blog, providing endpoints for essential CRUD operations on both blogs and comments.
 Tasks:
