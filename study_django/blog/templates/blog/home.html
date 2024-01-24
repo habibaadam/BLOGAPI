@@ -1,10 +1,17 @@
+{# Home page inheriting from base template #}
 
 {% extends "blog/base.html" %}
 {% block content %}
-    <h1>Home Page</h1>
-     {% for a_post in posts %}
-     <h1>{{ a_post.title }}</h1>
-        <p>By {{ a_post.author }} on {{ a_post.date_posted }}</p>
-        <p>{{ a_post.content }}</p>
-     {% endfor %}
+    {% for post in posts %}
+    <article class="media content-section">
+       <div class="media-body">
+         <div class="article-metadata">
+           <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+          </div>
+             <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+        </div>
+    </article>
+    {% endfor %}
 {% endblock content %}
