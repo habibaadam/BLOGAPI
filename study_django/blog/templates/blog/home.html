@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Document</title>
-</head>
-<body>
+
+{% extends "blog/base.html" %}
+{% block content %}
+    <h1>Home Page</h1>
      {% for a_post in posts %}
      <h1>{{ a_post.title }}</h1>
-        <p>{{ a_post.author }}</p>
+        <p>By {{ a_post.author }} on {{ a_post.date_posted }}</p>
+        <p>{{ a_post.content }}</p>
      {% endfor %}
-</body>
-</html>
+{% endblock content %}

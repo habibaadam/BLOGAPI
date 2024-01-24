@@ -33,10 +33,10 @@ posts = [
 def blog_home(request):
     """dictionary with our dummy data as key to give access to home template"""
     context_key = {
-        'posts':posts
+        'posts': posts
     }
     return render(request, 'blog/home.html', context_key)
 
 """Function presenting the blog about page"""
 def blog_about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html', {'title': 'About'})
